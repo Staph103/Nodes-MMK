@@ -20,14 +20,7 @@ inquirer
 
     ])
     .then((answers) => {
-        // Use user feedback for... whatever!!
-        // console.log(answers.title)
-        // console.log(answers.descrpt)
-        // console.log(answers.instal)
-        // console.log(answers.usage)
-        // console.log(answers.contrib)
-        // console.log(answers.test)
-        // console.log(answers.license)
+    
         const theData = generateMarkdown(answers);
         console.log("ansers" + theData)
         fs.writeFile('README.md', generateMarkdown(answers), (err) => {
