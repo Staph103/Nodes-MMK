@@ -1,7 +1,9 @@
-# sdf  ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
+# Practice Readme  ![Github license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
+
 
   ## Description
-    asdf 
+    This is a test to generate a professional readme 
+
 
   ## Table of Contents
 
@@ -13,23 +15,30 @@
   * [Questions](#questions)
   
 
+
   ## Installation
-    fg 
+    type node index.js in a terminal and answer the prompts 
+  
     
   ## Usage
 
-   fgsd 
-  
+   type node index.js into the terminal and answer the prompts 
+
+   
 ## License
 
   ## Contribution
 
-    sdfg 
+    project is not open source no contribution 
+
+
   ## Tests
-    sdf
+    run the application
+
 
   ## Questions 
 
-  Username: sd 
 
-  https://github.com/sd
+  Username: staph103
+ 
+  GitHub: https://github.com/staph103

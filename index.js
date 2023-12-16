@@ -1,11 +1,11 @@
-
+//function, commonly used for module imports in Node.js applications
 const fs = require('fs')
 const generateMarkdown = require('./utils/mdGenerator')
 const inquirer = require('inquirer');
 console.log(generateMarkdown);
 inquirer
     .prompt([
-        /* Pass your questions in here */
+        // Pass your questions in here 
         { type: 'input', name: 'title', message: 'What is the name of your project?' },
         { type: 'input', name: 'descrpt', message: 'Describe your project in a few words' },
         { type: 'input', name: 'instal', message: 'Proivide installation instructions' },
@@ -19,10 +19,11 @@ inquirer
 
 
     ])
+    //creates a file titled README.md and adds the data collected to that file 
     .then((answers) => {
-    
+
         const theData = generateMarkdown(answers);
-        console.log("ansers" + theData)
+        console.log("answers" + theData)
         fs.writeFile('README.md', generateMarkdown(answers), (err) => {
             if (err) {
                 console.log(err)
@@ -33,11 +34,11 @@ inquirer
         })
 
     })
-
+    //
     .catch((error) => {
         if (error.isTtyError) {
-            // Prompt couldn't be rendered in the current environment
+
         } else {
-            // Something else went wrong
+
         }
     });
